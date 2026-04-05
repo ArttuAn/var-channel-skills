@@ -17,6 +17,7 @@ A library of marketing skill definitions for AI agents focused on VAR (Value Add
 For a complete VAR pipeline, load and execute skills in this order:
 
 ```
+0. skills/var-channel-context.md    — create your channel context document (run once, all other skills read it)
 1. skills/var-identification.md     — find candidates
 2. skills/var-research.md           — profile each candidate
 3. skills/var-qualification.md      — score and rank
