@@ -20,18 +20,18 @@ Skills reference each other and build on shared context. The `var-channel-contex
 
 ```
                     ┌────────────────────────────────────────────┐
-                    │           var-channel-context               │
-                    │     (read by all other skills first)        │
+                    │           var-channel-context              │
+                    │     (read by all other skills first)       │
                     └──────────────────┬─────────────────────────┘
                                        │
   ┌─────────────┬──────────────────────┼──────────────┬─────────────┬─────────────┐
   ▼             ▼                      ▼              ▼             ▼             ▼
-┌──────────┐ ┌──────────┐ ┌──────────────┐ ┌──────────┐ ┌──────────┐ ┌──────────────┐
-│Discovery │ │Intelligence│ │Prioritization│ │Recruitment│ │Partnership│ │Pipeline Gen  │
-├──────────┤ ├──────────┤ ├──────────────┤ ├──────────┤ ├──────────┤ ├──────────────┤
-│var-ident-│ │var-      │ │var-qualif-   │ │var-      │ │var-part- │ │var-lead-     │
-│ification │ │research  │ │ication       │ │outreach  │ │nership   │ │generation    │
-└────┬─────┘ └────┬─────┘ └──────┬───────┘ └────┬─────┘ └────┬─────┘ └──────────────┘
+┌──────────┐ ┌────────────┐ ┌──────────────┐ ┌───────────┐ ┌───────────┐ ┌─────────────┐
+│Discovery │ │Intelligence│ │Prioritization│ │Recruitment│ │Partnership│ │Pipeline Gen │
+├──────────┤ ├────────────┤ ├──────────────┤ ├───────────┤ ├───────────┤ ├─────────────┤
+│var-ident-│ │var-        │ │var-qualif-   │ │var-       │ │var-part-  │ │var-lead-    │
+│ification │ │research    │ │ication       │ │outreach   │ │nership    │ │generation   │
+└────┬─────┘ └────┬───────┘ └──────┬───────┘ └────┬──────┘ └────┬──────┘ └─────────────┘
      │             │              │              │            │
      └─────────────┴──────┬───────┴──────────────┴────────────┘
                           │
@@ -51,43 +51,43 @@ Skills are designed as a complete end-to-end channel pipeline. Each skill produc
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
-│                         VAR Channel Pipeline                              │
+│                         VAR Channel Pipeline                             │
 └──────────────────────────────────────────────────────────────────────────┘
 
- ┌─────────────────────┐
+ ┌──────────────────────┐
  │  var-identification  │  Surface 20–150 candidate VARs from directories,
  │                      │  partner networks, trade associations, LinkedIn
  └──────────┬───────────┘
             │  candidate list
             ▼
- ┌─────────────────────┐
+ ┌──────────────────────┐
  │  var-research        │  Build factual profiles: portfolio, certifications,
  │                      │  leadership, financial signals, relationship overlap
  └──────────┬───────────┘
             │  structured profiles
             ▼
- ┌─────────────────────┐
+ ┌──────────────────────┐
  │  var-qualification   │  Score on 6 weighted dimensions — strategic fit,
  │                      │  technical capability, geography, market reach,
  └──────────┬───────────┘  org health, competitive conflict (0–48 pts)
             │  ranked shortlist
             ▼
- ┌─────────────────────┐
+ ┌──────────────────────┐
  │  var-outreach        │  Draft personalized email + LinkedIn sequences
  │                      │  with day-0, day-5, day-10 follow-ups per contact
  └──────────┬───────────┘
             │  approved messages
             ▼
- ┌─────────────────────┐
+ ┌──────────────────────┐
  │  var-partnership     │  Structure the deal: model selection, terms outline,
  │                      │  onboarding checklist, partner brief, early wins
  └──────────┬───────────┘
             │  active partner
             ▼
- ┌─────────────────────┐
+ ┌──────────────────────┐
  │  var-lead-generation │  Activate referral, co-sell, and co-marketing
  │                      │  programs — track attribution, run QBRs
- └─────────────────────┘
+ └──────────────────────┘
 ```
 
 You do not need to run the full pipeline. Start at the step that matches your current state.
