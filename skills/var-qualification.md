@@ -37,7 +37,7 @@ Use this skill when:
 
 ## Scoring Framework
 
-Score each candidate across six dimensions. Each dimension scores 0–3. Total possible: 18 points.
+Score each candidate across six dimensions. Each dimension scores 0–3. Unweighted total: 18. Weighted total (applying multipliers below): 39 maximum.
 
 ### Dimension 1 — Strategic Fit (weight: 3x)
 
@@ -117,7 +117,7 @@ For each VAR profile:
 1. Read through the full research profile
 2. Score each of the six dimensions
 3. Apply weights: multiply score × weight value
-4. Sum weighted scores for a total out of 48
+4. Sum weighted scores for a total out of 39
 
 ### Step 2 — Apply disqualifiers
 
@@ -130,10 +130,10 @@ Before ranking, check for automatic disqualifiers:
 
 | Weighted Total | Recommendation |
 |---|---|
-| 36–48 | **Pursue** — high priority, contact within this week |
-| 24–35 | **Pursue** — standard priority, include in next outreach batch |
-| 12–23 | **Hold** — revisit if first-choice VARs don't convert |
-| 0–11 | **Pass** — does not meet minimum threshold |
+| 30–39 | **Pursue** — high priority, contact within this week |
+| 20–29 | **Pursue** — standard priority, include in next outreach batch |
+| 10–19 | **Hold** — revisit if first-choice VARs don't convert |
+| 0–9   | **Pass** — does not meet minimum threshold |
 
 ### Step 4 — Rank and sort
 
