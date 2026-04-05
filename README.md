@@ -216,6 +216,30 @@ You can also invoke skills directly:
 ### Pipeline Generation
 - `var-lead-generation` — Run referral, co-sell, and co-marketing programs with attribution tracking
 
+## Tools
+
+Utility scripts that work alongside the skills. No `npm install` needed — Node.js built-ins only.
+
+| Tool | Description |
+|---|---|
+| `tools/var-scorer.js` | Interactive CLI scorer — input dimension scores, get weighted total, tier, and breakdown. Supports `--json` and `--batch` modes |
+| `tools/csv-to-candidates.js` | Convert a CSV of company names/websites into the standard candidate Markdown table, ready for `var-research` |
+| `tools/pipeline-status.js` | Terminal dashboard showing pipeline stage, score, last contact, owner, and overdue follow-ups for every candidate |
+
+```bash
+# Score a candidate interactively
+node tools/var-scorer.js
+
+# Convert your own CSV list into the candidate format
+node tools/csv-to-candidates.js my-list.csv --output candidates.md
+
+# View your pipeline dashboard (generate sample data first)
+node tools/pipeline-status.js --sample pipeline.json
+node tools/pipeline-status.js --json pipeline.json
+```
+
+See [tools/README.md](tools/README.md) for full usage and JSON schemas.
+
 ## Design Principles
 
 - **Procedure over prose** — skills give agents step-by-step instructions, not vague guidance
